@@ -213,6 +213,7 @@ class Cat:
         elif self.gender == 'male':
             self.gender = 'masc'
         self.status: Status = Status(**status_dict) if status_dict else Status()
+        kittypet = (kittypet or self.status.social == CatSocial.KITTYPET)
         self.backstory = backstory
         self.age: Optional[CatAge] = None
         self.skills = CatSkills(skill_dict=skill_dict)
@@ -266,14 +267,14 @@ class Cat:
                     self.phenotype.Generator(kittypet=kittypet, special=self.gender)
         else:
             if not chimera:
-                if (kittypet or self.status.social == CatSocial.KITTYPET) and constants.CONFIG["cat_generation"]["kittypet_gene_boost"]:
+                if kittypet and constants.CONFIG["cat_generation"]["kittypet_gene_boost"]:
                     self.phenotype.AltGenerator(special=self.gender)
                 else:
                     self.phenotype.Generator(special=self.gender, kittypet=kittypet)
             else:
                 par1 = Phenotype(gene_config, game_setting_get("ban problem genes"))
                 par2 = Phenotype(gene_config, game_setting_get("ban problem genes"))
-                if (kittypet or self.status.social == CatSocial.KITTYPET) and constants.CONFIG["cat_generation"]["kittypet_gene_boost"]:
+                if kittypet and constants.CONFIG["cat_generation"]["kittypet_gene_boost"]:
                     par1.AltGenerator()
                     par2.AltGenerator()
                 else:
@@ -290,7 +291,7 @@ class Cat:
             if 'NoDBE' not in self.phenotype.pax3 and 'DBEalt' not in self.phenotype.pax3:
                 self.phenotype.pax3[0] = 'DBEalt'
         
-        if not loading_cat:
+        if not loading_cat and not self.disable_random:
             if(randint(1, constants.CONFIG['genetics_config']['intersex']) == 1) or (self.chimerapheno and xor('Y' in self.phenotype.sexgene, 'Y' in self.chimerapheno.sexgene)):
                 self.phenotype.sex = "intersex"
                 if (randint(1, 25) == 1 and 'Y' in self.phenotype.sexgene) or (self.chimerapheno and xor('Y' in self.phenotype.sexgene, 'Y' in self.chimerapheno.sexgene) and randint(1, 10) == 1):
@@ -1011,7 +1012,7 @@ class Cat:
                     high_types.extend(rel_type)
                 elif tier.is_extreme_neg:
                     very_low_types.extend(rel_type)
-                elif tier.is_mid_neg and randint(1, 4) == 1:
+                elif tier.is_mid_neg and randint(1, 6) == 1:
                     very_low_types.extend(rel_type)
                 continue
 
@@ -1020,7 +1021,12 @@ class Cat:
                 # major grief eligible cats.
 
                 major_chance = 3
+                # the less stable the cat, the more likely to grieve
                 if cat.personality.stability < 5:
+                    major_chance -= 1
+
+                # if considered family, grief more likely
+                if family_relation != "general":
                     major_chance -= 1
 
                 # decrease major grief chance if grave herbs are used
@@ -1063,7 +1069,7 @@ class Cat:
                 cat.get_ill("grief stricken", event_triggered=True, severity="major")
 
             # If major grief fails, but there are still very_high or high values,
-            # it can fail to minor grief. If they have a family relation, bypass the roll.
+            # it can fail to minor grief. If they have a family relation, bypass the roll and guarantee it
             elif (very_high_types or high_types) and (
                 family_relation != "general" or not int(random() * 5)
             ):
@@ -1118,6 +1124,8 @@ class Cat:
             return "parent"
         elif dead_cat.is_sibling(living_cat):
             return "sibling"
+        elif dead_cat.ID in living_cat.mate:
+            return "mate"
         else:
             return "general"
 
@@ -2061,10 +2069,16 @@ class Cat:
             self.inheritance = Inheritance(self)
         return self.inheritance.siblings.keys()
 
-    def get_children(self):
+    def get_children(self, only_living=False):
         """Returns list of the children (ids)."""
         if not self.inheritance:
             self.inheritance = Inheritance(self)
+        if only_living:
+            living_ids = []
+            for k in self.inheritance.kits.keys():
+                if k in Cat.all_cats and not Cat.all_cats[k].dead:
+                    living_ids.append(k)
+            return living_ids
         return self.inheritance.kits.keys()
 
     def is_grandparent(self, other_cat: Cat):
