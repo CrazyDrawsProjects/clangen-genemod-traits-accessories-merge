@@ -36,6 +36,76 @@ class Sprites:
         WILD_DATA = ujson.loads(read_file.read())
 
     with open(
+        "sprites/dicts/twolegstuff_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        TWOLEGSTUFF_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/sterflowers_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        STERFLOWERS_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/smallanimal_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        SMALLANIMAL_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/sailormoon_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        SAILORMOON_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/plant2_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        PLANT2_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/fruit_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        FRUIT_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/flower_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        FLOWER_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/deadinsect_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        DEADINSECT_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/crafted_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        CRAFTED_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/butterflymoth_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        BUTTERFLYMOTH_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/bones_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        BONES_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/beetlefeathers_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        BEETLEFEATHERS_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/beetle_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        BEETLE_DATA = ujson.loads(read_file.read())
+
+    with open(
+        "sprites/dicts/aliveinsect_sprite_data.json", "r", encoding="utf-8"
+    ) as read_file:
+        ALIVEINSECT_DATA = ujson.loads(read_file.read())
+
+    with open(
         "sprites/dicts/plant_sprite_data.json", "r", encoding="utf-8"
     ) as read_file:
         PLANT_DATA = ujson.loads(read_file.read())

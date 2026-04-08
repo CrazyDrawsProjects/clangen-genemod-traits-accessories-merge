@@ -74,6 +74,160 @@ class Pelt:
             elif sprite_list[sprite] == "head":
                 body_accessories.append(sprite)
 
+    aliveinsect_accessories = []
+    for sprite_list in sprites.ALIVEINSECT_DATA["sprite_list"]:
+        aliveinsect_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    beetle_accessories = []
+    for sprite_list in sprites.BEETLE_DATA["sprite_list"]:
+        beetle_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    beetlefeathers_accessories = []
+    for sprite_list in sprites.BEETLEFEATHERS_DATA["sprite_list"]:
+        beetlefeathers_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    bones_accessories = []
+    for sprite_list in sprites.BONES_DATA["sprite_list"]:
+        bones_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    butterflymoth_accessories = []
+    for sprite_list in sprites.BUTTERFLYMOTH_DATA["sprite_list"]:
+        butterflymoth_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    crafted_accessories = []
+    for sprite_list in sprites.CRAFTED_DATA["sprite_list"]:
+        crafted_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    deadinsect_accessories = []
+    for sprite_list in sprites.DEADINSECT_DATA["sprite_list"]:
+        deadinsect_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    flower_accessories = []
+    for sprite_list in sprites.FLOWER_DATA["sprite_list"]:
+        flower_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    fruit_accessories = []
+    for sprite_list in sprites.FRUIT_DATA["sprite_list"]:
+        fruit_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    plant2_accessories = []
+    for sprite_list in sprites.PLANT2_DATA["sprite_list"]:
+        plant2_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    sailormoon_accessories = []
+    for sprite_list in sprites.SAILORMOON_DATA["sprite_list"]:
+        sailormoon_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    smallanimal_accessories = []
+    for sprite_list in sprites.SMALLANIMAL_DATA["sprite_list"]:
+        smallanimal_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    sterflowers_accessories = []
+    for sprite_list in sprites.STERFLOWERS_DATA["sprite_list"]:
+        sterflowers_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
+    twolegstuff_accessories = []
+    for sprite_list in sprites.TWOLEGSTUFF_DATA["sprite_list"]:
+        twolegstuff_accessories.extend(sprite_list)
+        for sprite in sprite_list:
+            if sprite_list[sprite] == "tail":
+                tail_accessories.append(sprite)
+            elif sprite_list[sprite] == "body":
+                body_accessories.append(sprite)
+            elif sprite_list[sprite] == "head":
+                body_accessories.append(sprite)
+
     collar_accessories = []
     collar_styles = []
     if sprites.COLLAR_DATA["palette_map"]:

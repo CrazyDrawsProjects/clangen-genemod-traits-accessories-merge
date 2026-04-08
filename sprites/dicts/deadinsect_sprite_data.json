@@ -1,0 +1,13 @@
+{
+    "spritesheet": "acc_deadinsect",
+    "sprite_list": [
+        {
+            "LUNAR MOTH": "head",
+            "ROSY MAPLE MOTH": "head",
+            "MONARCH BUTTERFLY": "head",
+            "DAPPLED MONARCH": "head",
+            "POLYPHEMUS MOTH": "head",
+            "MINT MOTH": "head"
+        }
+    ]
+}

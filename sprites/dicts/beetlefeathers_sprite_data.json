@@ -1,0 +1,19 @@
+{
+    "spritesheet": "acc_beetlefeathers",
+    "sprite_list": [
+        {
+            "THRUSH FEATHERS": "tail",
+            "GOLDFINCH FEATHERS": "tail",
+            "DOVE FEATHERS": "tail",
+            "PEACOCK FEATHERS": "tail",
+            "HAWK FEATHERS": "tail",
+            "BLUE JAY FEATHERS": "tail"
+        },
+        {
+            "ROBIN FEATHERS": "tail", 
+            "FIERY FEATHERS": "tail", 
+            "SUNSET FEATHERS": "tail",
+            "SILVER FEATHERS": "tail"
+        }
+    ]
+}

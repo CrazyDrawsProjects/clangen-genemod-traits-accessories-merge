@@ -1,0 +1,28 @@
+{
+    "spritesheet": "acc_twolegstuff",
+    "sprite_list": [
+        {
+            "OLD GOLD WATCH": "tail",
+            "OLD SILVER WATCH": "tail",
+            "GOLDEN KEY": "body",
+            "SILVER KEY": "body",
+            "DVD": "head",
+            "OLD PENCIL": "head",
+            "OLD BRUSH": "head",
+            "BANANA PEEL": "head",
+            "BROKEN VHS TAPE": "head",
+            "OLD NEWSPAPER": "body"
+        },
+        {
+            "SEA GLASS": "body",
+            "BAUBLES": "tail",
+            "MUD AND DIRT": "body",
+            "HEART CHARM": "head",
+            "LANTERN": "body",
+            "SILVER CELESTIAL CHARMS": "head",
+            "GOLDEN STAR CHARM": "head",
+            "GOLDEN CELESTIAL CHARMS": "tail",
+            "CELESTIAL CHARMS": "tail"
+        }
+    ]
+}

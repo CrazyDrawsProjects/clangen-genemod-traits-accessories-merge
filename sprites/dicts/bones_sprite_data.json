@@ -1,0 +1,22 @@
+{
+    "spritesheet": "acc_bones",
+    "sprite_list": [
+        {
+            "SNAKE": "body",
+            "BAT WINGS": "body",
+            "CANIDAE SKULL": "body",
+            "DEER ANTLERS": "body",
+            "RAM HORN": "body",
+            "GOAT HORN": "body",
+            "OX SKULL": "body",
+            "RAT SKULL": "head",
+            "TEETH COLLAR": "body",
+            "ROE SKULL": "body"
+        },
+        {
+            "BIRD SKULL1": "body", 
+            "RIBS": "body", 
+            "FISH BONES": "head"
+        }
+    ]
+}

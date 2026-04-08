@@ -1,0 +1,16 @@
+{
+    "spritesheet": "acc_plant2",
+    "sprite_list": [
+        {
+            "CLOVER2": "head",
+            "STICK": "head",
+            "PUMPKIN": "body",
+            "MOSS": "head",
+            "IVY": "head",
+            "ACORN": "head",
+            "MOSS PELT": "body",
+            "REEDS": "body",
+            "BAMBOO": "body"
+        }
+    ]
+}

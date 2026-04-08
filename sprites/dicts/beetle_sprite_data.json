@@ -1,0 +1,26 @@
+{
+    "spritesheet": "acc_beetle",
+    "sprite_list": [
+        {
+            "FROG FRIEND": "body",
+            "COWBOY HAT": "head",
+            "BUNNY HAT": "head",
+            "WINTER HAT": "head",
+            "PARTY HAT": "head",
+            "SANTA HAT": "head"
+        },
+        {
+            "BANANA HAT": "head",
+            "BAT WING SUIT": "body",
+            "PINK BOWTIE": "body",
+            "GRAY BOWTIE": "body",
+            "PINK SCARF": "head"
+        },
+        {
+            "BLUETAILED SKINK": "head",
+            "BLACKHEADED ORIOLE": "head",
+            "MILKSNAKE": "head",
+            "WORM FRIEND": "head"
+        }
+    ]
+}

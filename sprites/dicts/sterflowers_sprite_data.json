@@ -1,0 +1,24 @@
+{
+    "spritesheet": "acc_sterflowers",
+    "sprite_list": [
+        {
+            "POPPYFLOWER": "head",
+            "JUNIPERBERRY": "head",
+            "DAISYFLOWER": "head",
+            "BORAGEFLOWER": "head",
+            "OAK": "head",
+            "BEECH": "head"
+        },
+        {
+            "LAURELLEAVES": "head",
+            "COLTSFOOT": "head",
+            "BINDWEED": "head",
+            "TORMENTIL": "head",
+            "BRIGHTEYE": "head",
+            "LAVENDERWREATH": "head"
+        },
+        {
+            "YARROW": "head"
+        }
+    ]
+}

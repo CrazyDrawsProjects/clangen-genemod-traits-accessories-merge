@@ -1,0 +1,13 @@
+{
+    "spritesheet": "acc_crafted",
+    "sprite_list": [
+        {
+            "WILLOWBARK BAG": "body",
+            "CLAY DAISY POT": "body",
+            "CLAY AMANITA POT": "body",
+            "CLAY BROWNCAP POT": "body",
+            "BIRD SKULL": "head",
+            "LEAF BOW": "head"
+        }
+    ]
+}

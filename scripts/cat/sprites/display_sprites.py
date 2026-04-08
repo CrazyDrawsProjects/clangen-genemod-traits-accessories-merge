@@ -1526,6 +1526,146 @@ def generate_sprite(
                                 ),
                                 (0, 0),
                             )
+                        elif accessory in cat.pelt.aliveinsect_accessories:
+                            sprite_name = f"{sprites.ALIVEINSECT_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.beetle_accessories:
+                            sprite_name = f"{sprites.BEETLE_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.beetlefeathers_accessories:
+                            sprite_name = f"{sprites.BEETLEFEATHERS_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.bones_accessories:
+                            sprite_name = f"{sprites.BONES_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.butterflymoth_accessories:
+                            sprite_name = f"{sprites.BUTTERFLYMOTH_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.crafted_accessories:
+                            sprite_name = f"{sprites.CRAFTED_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.deadinsect_accessories:
+                            sprite_name = f"{sprites.DEADINSECT_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.flower_accessories:
+                            sprite_name = f"{sprites.FLOWER_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.fruit_accessories:
+                            sprite_name = f"{sprites.FRUIT_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.plant2_accessories:
+                            sprite_name = f"{sprites.PLANT2_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.sailormoon_accessories:
+                            sprite_name = f"{sprites.SAILORMOON_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.smallanimal_accessories:
+                            sprite_name = f"{sprites.SMALLANIMAL_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.sterflowers_accessories:
+                            sprite_name = f"{sprites.STERFLOWERS_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
+                        elif accessory in cat.pelt.twolegstuff_accessories:
+                            sprite_name = f"{sprites.TWOLEGSTUFF_DATA['spritesheet']}{accessory}{cat_sprite}"
+                            new_sprite.blit(
+                                _recolor_lineart(
+                                    sprites.sprites[sprite_name],
+                                    lineart_color,
+                                    gradient_surface,
+                                ),
+                                (0, 0),
+                            )
                         elif accessory in cat.pelt.collar_accessories:
                             sprite_name = f"{sprites.COLLAR_DATA['spritesheet']}{accessory}{cat_sprite}"
                             new_sprite.blit(

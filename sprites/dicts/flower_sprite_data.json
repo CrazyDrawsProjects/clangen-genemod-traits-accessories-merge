@@ -1,0 +1,23 @@
+{
+    "spritesheet": "acc_flower",
+    "sprite_list": [
+        {
+            "DAISY2": "head",
+            "DIANTHUS": "head",
+            "BLEEDING HEARTS": "head",
+            "FRANGIPANI": "head",
+            "BLUE GLORY": "head",
+            "CATNIP FLOWER": "head",
+            "BLANKET FLOWER": "head",
+            "ALLIUM": "head",
+            "LACELEAF": "head",
+            "PURPLE GLORY": "head"
+        },
+        {
+            "YELLOW PRIMROSE": "head", 
+            "HESPERIS": "body", 
+            "MARIGOLD": "head", 
+            "WISTERIA2": "head"
+        }
+    ]
+}

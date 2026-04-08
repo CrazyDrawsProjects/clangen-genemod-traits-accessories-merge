@@ -1,0 +1,25 @@
+{
+    "spritesheet": "acc_butterflymoth",
+    "sprite_list": [
+        {
+            "PEACOCK BUTTERFLY": "head",
+            "DEATH HEAD HAWKMOTH": "head",
+            "GARDEN TIGER MOTH": "head",
+            "ATLAS MOTH": "head",
+            "CECOROPIA MOTH": "head",
+            "WHITE ERMINE MOTH": "head",
+            "IO MOTH": "head",
+            "COMET MOTH": "head",
+            "JADE HAWKMOTH": "head",
+            "HUMMINGBIRD HAWKMOTH": "head"
+        },
+        {
+            "OWL BUTTERFLY": "head",
+            "GLASSWING BUTTERFLY": "head",
+            "QUEEN ALEXANDRA BIRDWING BUTTERFLY": "head",
+            "GREEN DRAGONTAIL BUTTERFLY": "head",
+            "MENELAUS BLUE MORPHO BUTTERFLY": "head",
+            "DEAD LEAF BUTTERFLY": "head"
+        }
+    ]
+}

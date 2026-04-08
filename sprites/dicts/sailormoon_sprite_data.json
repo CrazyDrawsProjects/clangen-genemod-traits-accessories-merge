@@ -1,0 +1,21 @@
+{
+    "spritesheet": "acc_sailormoon",
+    "sprite_list": [
+        {
+            "MOON": "head", 
+            "MERCURY": "head", 
+            "MARS": "head", 
+            "JUPITER": "head", 
+            "VENUS": "head", 
+            "TUXEDO MASK": "body"
+        },
+        {
+            "URANUS": "head", 
+            "NEPTUNE": "head", 
+            "PLUTO": "head", 
+            "SATURN": "head", 
+            "MINI MOON": "head", 
+            "CRYSTAL BALL": "body"
+        }
+    ]
+}
