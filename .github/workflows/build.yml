@@ -145,8 +145,8 @@ jobs:
         if: startsWith(matrix.os, 'windows')
         shell: powershell
         run: |
-          cp dist/Clangen/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist Clangen .itch.toml
+          cp dist/Genemod/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist Genemod .itch.toml
       - name: Create DMG (macOS)
         if: startsWith(matrix.os, 'macos')
         run: |
