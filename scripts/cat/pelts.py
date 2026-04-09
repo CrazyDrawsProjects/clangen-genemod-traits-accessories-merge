@@ -244,7 +244,20 @@ class Pelt:
     # adding a category here will automatically update the event editor's options
     acc_categories = {
         "PLANT": plant_accessories,
-        "WILD": wild_accessories,
+        "ALIVEINSECT": aliveinsect_accessories,
+        "BEETLE": beetle_accessories,
+        "BEETLEFEATHERS": beetlefeathers_accessories,
+        "BONES": bones_accessories,
+        "BUTTERFLYMOTH": butterflymoth_accessories,
+        "CRAFTED": crafted_accessories,
+        "DEADINSECT": deadinsect_accessories,
+        "FLOWER": flower_accessories,
+        "FRUIT": fruit_accessories,
+        "PLANT2": plant2_accessories,
+        "SAILORMOON": sailormoon_accessories,
+        "SMALLANIMAL": smallanimal_accessories,
+        "STERFLOWERS": sterflowers_accessories,
+        "TWOLEGSTUFF": twolegstuff_accessories,
         "COLLAR": collar_accessories,
     }
 
@@ -857,7 +870,7 @@ class Pelt:
 
         if acc_display_choice == 1:
             self.accessory = tuple(
-                [choice([choice(Pelt.plant_accessories), choice(Pelt.wild_accessories)])]
+                [choice([choice(Pelt.plant_accessories), choice(Pelt.wild_accessories), choice(Pelt.aliveinsect_accessories), choice(Pelt.beetle_accessories), choice(Pelt.beetlefeathers_accessories), choice(Pelt.bones_accessories), choice(Pelt.butterflymoth_accessories), choice(Pelt.crafted_accessories), choice(Pelt.deadinsect_accessories), choice(Pelt.flower_accessories), choice(Pelt.fruit_accessories), choice(Pelt.plant2_accessories), choice(Pelt.sailormoon_accessories), choice(Pelt.smallanimal_accessories), choice(Pelt.sterflowers_accessories), choice(Pelt.twolegstuff_accessories)])]
             )
         else:
             self.accessory = tuple()
