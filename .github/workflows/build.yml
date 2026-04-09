@@ -18,28 +18,28 @@ jobs:
       matrix:
         include:
           - os: ubuntu-22.04
-            artifact_name: Genemod_Linux64_glibc2.35+.tar.xz
+            artifact_name: Genemodmerge_Linux64_glibc2.35+.tar.xz
             python_version: "3.11"
             python_arch: "x64"
             itch_channel: linux64_glibc_235
             api_artifact_name: linux2.35
             
           - os: windows-latest
-            artifact_name: Genemod_Win64.zip
+            artifact_name: Genemodmerge_Win64.zip
             python_version: "3.8"
             python_arch: "x64"
             itch_channel: win64
             api_artifact_name: win64
             
           - os: windows-latest
-            artifact_name: Genemod_Win64_Windows10+.zip
+            artifact_name: Genemodmerge_Win64_Windows10+.zip
             python_version: "3.11"
             python_arch: "x64"
             itch_channel: win64_10
             api_artifact_name: win10+
             
           - os: macos-15-intel
-            artifact_name: Genemod_macOS64.dmg
+            artifact_name: Genemodmerge_macOS64.dmg
             python_version: "3.11"
             python_arch: "x64"
             itch_channel: osx64
@@ -145,8 +145,8 @@ jobs:
         if: startsWith(matrix.os, 'windows')
         shell: powershell
         run: |
-          cp dist/Genemod/_internal/.itch.toml dist/ 
-          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist Genemod .itch.toml
+          cp dist/Clangen/_internal/.itch.toml dist/ 
+          tar.exe -a -c -f ${{ matrix.artifact_name }} -C dist Clangen .itch.toml
       - name: Create DMG (macOS)
         if: startsWith(matrix.os, 'macos')
         run: |
