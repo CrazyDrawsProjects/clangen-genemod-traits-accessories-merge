@@ -244,6 +244,7 @@ class Pelt:
     # adding a category here will automatically update the event editor's options
     acc_categories = {
         "PLANT": plant_accessories,
+        "WILD": wild_accessories,
         "ALIVEINSECT": aliveinsect_accessories,
         "BEETLE": beetle_accessories,
         "BEETLEFEATHERS": beetlefeathers_accessories,

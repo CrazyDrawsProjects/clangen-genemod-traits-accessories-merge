@@ -514,6 +514,34 @@ class ShortEvent:
             acc_list.extend(Pelt.wild_accessories)
         if "PLANT" in possible_accs:
             acc_list.extend(Pelt.plant_accessories)
+        if "ALIVEINSECT" in possible_accs:
+            acc_list.extend(Pelt.aliveinsect_accessories)
+        if "BEETLE" in possible_accs:
+            acc_list.extend(Pelt.beetle_accessories)
+        if "BEETLEFEATHERS" in possible_accs:
+            acc_list.extend(Pelt.beetlefeathers_accessories)
+        if "BONES" in possible_accs:
+            acc_list.extend(Pelt.bones_accessories)
+        if "BUTTERFLYMOTH" in possible_accs:
+            acc_list.extend(Pelt.butterflymoth_accessories)
+        if "CRAFTED" in possible_accs:
+            acc_list.extend(Pelt.crafted_accessories)
+        if "DEADINSECT" in possible_accs:
+            acc_list.extend(Pelt.deadinsect_accessories)
+        if "FLOWER" in possible_accs:
+            acc_list.extend(Pelt.flower_accessories)
+        if "FRUIT" in possible_accs:
+            acc_list.extend(Pelt.fruit_accessories)
+        if "PLANT2" in possible_accs:
+            acc_list.extend(Pelt.plant2_accessories)
+        if "SAILORMOON" in possible_accs:
+            acc_list.extend(Pelt.sailormoon_accessories)
+        if "SMALLANIMAL" in possible_accs:
+            acc_list.extend(Pelt.smallanimal_accessories)
+        if "STERFLOWERS" in possible_accs:
+            acc_list.extend(Pelt.sterflowers_accessories)
+        if "TWOLEGSTUFF" in possible_accs:
+            acc_list.extend(Pelt.twolegstuff_accessories)
         if "COLLAR" in possible_accs:
             acc_list.extend(Pelt.collar_accessories)
 
